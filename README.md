@@ -24,3 +24,9 @@ iron sword : Hp += 15 / Attack += 5
 Attack
 
 ![0 01v Attack1](https://user-images.githubusercontent.com/92620792/159122749-b0062ab9-e69b-43d8-a926-e3484bc20f6b.gif)
+
+Change Weapon
+
+Iron / Ice
+
+![0 01v Change weapon](https://user-images.githubusercontent.com/92620792/159122831-87065f34-df13-419a-b000-534329165985.gif)
