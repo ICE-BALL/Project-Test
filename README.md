@@ -20,3 +20,7 @@ Base : Hp = 100 / Attack = 5
 ice sword : Hp += 10 / Attack += 10
 
 iron sword : Hp += 15 / Attack += 5
+
+Attack
+
+![0 01v Attack1](https://user-images.githubusercontent.com/92620792/159122749-b0062ab9-e69b-43d8-a926-e3484bc20f6b.gif)
