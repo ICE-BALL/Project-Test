@@ -37,6 +37,7 @@ public class PlayerController : MonoBehaviour
         Ice_Canvas.Ice += Change_Ice;
 
         Managers.UI.ShowSceneUI<Bag>();
+        Managers.UI.ShowSceneUI<Sword_On_Off>();
 
         Parent = GameObject.Find("Character1_RightForeArm");
         Sword_Iron = Managers.Resource.Instantiate("MagicSword_Iron", Parent.transform);
@@ -61,7 +62,7 @@ public class PlayerController : MonoBehaviour
         if (Input.anyKey != true) { state = PlayerState.Idle; }
         Attack();
 
-        Debug.Log($"Hp : {_playerStat.Hp} / Attack : {_playerStat.Attack}");
+        //Debug.Log($"Hp : {_playerStat.Hp} / Attack : {_playerStat.Attack}");
     }
 
     void Move()
@@ -69,25 +70,25 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKey(KeyCode.W))
         {
             state = PlayerState.Run;
-            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(Vector3.forward), 0.2f);
+            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(Vector3.forward), 0.5f);
             transform.position += Vector3.forward * _playerStat.Speed * Time.deltaTime;
         }
         if (Input.GetKey(KeyCode.S))
         {
             state = PlayerState.Run;
-            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(Vector3.back), 0.2f);
+            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(Vector3.back), 0.5f);
             transform.position += Vector3.back * _playerStat.Speed * Time.deltaTime;
         }
         if (Input.GetKey(KeyCode.D))
         {
             state = PlayerState.Run;
-            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(Vector3.right), 0.2f);
+            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(Vector3.right), 0.5f);
             transform.position += Vector3.right * _playerStat.Speed * Time.deltaTime;
         }
         if (Input.GetKey(KeyCode.A))
         {
             state = PlayerState.Run;
-            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(Vector3.left), 0.2f);
+            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(Vector3.left), 0.5f);
             transform.position += Vector3.left * _playerStat.Speed * Time.deltaTime;
         }
     }
@@ -111,11 +112,13 @@ public class PlayerController : MonoBehaviour
             Animator anim = GetComponent<Animator>();
             anim.SetBool("Sword", true);
         }
+
         if (Input.GetMouseButtonUp(0))
         {
             Animator anim = GetComponent<Animator>();
             anim.SetBool("Sword", false);
         }
+
     }
 
     void Change_Iron()

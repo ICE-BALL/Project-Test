@@ -38,7 +38,7 @@ public class Ice_Canvas : UI_Popup
 
     void ShowOrClose()
     {
-        if (Define.Bag == true)
+        if (Define.Sword == true)
             gameObject.SetActive(true);
         else
             gameObject.SetActive(false);

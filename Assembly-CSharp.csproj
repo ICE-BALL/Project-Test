@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{BDBCE7D3-139D-3EDB-816D-FB1D73476D25}</ProjectGuid>
+    <ProjectGuid>{8E8F545A-2D2E-DE0E-B1E3-8F407F88D534}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -59,6 +59,7 @@
     <Compile Include="Assets\Script\UI\UI_Popup\Iron_Canvas.cs" />
     <Compile Include="Assets\Script\UI\UI_Scene\Bag.cs" />
     <Compile Include="Assets\Script\Utils\Util.cs" />
+    <Compile Include="Assets\Polytope Studio\Lowpoly Medieval Demos\Environment_Free\MouseLook.cs" />
     <Compile Include="Assets\Script\UI\UI_EventHandler.cs" />
     <Compile Include="Assets\Script\UI\Extension.cs" />
     <Compile Include="Assets\Script\UI\UI_Popup\UI_Popup.cs" />
@@ -66,26 +67,40 @@
     <Compile Include="Assets\Script\UI\UI_Base.cs" />
     <Compile Include="Assets\Script\UI\UI_Popup\Ice_Canvas.cs" />
     <Compile Include="Assets\Script\Managers\InputManager.cs" />
+    <Compile Include="Assets\Script\Data\Stat.cs" />
+    <Compile Include="Assets\Polytope Studio\Lowpoly Medieval Demos\Environment_Free\PlayerMovement.cs" />
     <Compile Include="Assets\Script\Controller\CameraController.cs" />
     <Compile Include="Assets\Script\Managers\ResourceManager.cs" />
     <Compile Include="Assets\Script\Utils\Define.cs" />
     <Compile Include="Assets\Script\Managers\Managers.cs" />
     <Compile Include="Assets\Script\UI\UI_Scene\UI_Scene.cs" />
     <Compile Include="Assets\Script\Managers\UIManager.cs" />
-    <Compile Include="Assets\Script\Data\Stat.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Resources\Art\UnityChan\Art\UnityChanShader\Shader\Unitychan_chara_fuku.shader" />
+    <None Include="Assets\Polytope Studio\Lowpoly Medieval Environments\Sources\Shaders\PT_Water_Shader_WebGl.shader" />
     <None Include="Assets\Resources\Art\UnityChan\Art\UnityChanShader\Shader\Unitychan_chara_akarami_blend.shader" />
+    <None Include="Assets\Polytope Studio\Lowpoly Medieval Environments\Sources\Shaders\PT_Vegetation_Plants_Shader.shader" />
     <None Include="Assets\Resources\Art\UnityChan\Art\UnityChanShader\Shader\Unitychan_chara_hair_ds.shader" />
     <None Include="Assets\Resources\Art\UnityChan\Art\UnityChanShader\Shader\Unitychan_chara_hada.shader" />
     <None Include="Assets\Resources\Art\UnityChan\Art\UnityChanShader\Shader\Unitychan_chara_fuku_ds.shader" />
+    <None Include="Assets\Polytope Studio\Lowpoly Medieval Environments\Sources\Shaders\PT_Vegetation_Opaque_Shader_VS.shader" />
     <None Include="Assets\Resources\Art\UnityChan\Art\UnityChanShader\Shader\Unitychan_chara_eyelash_blend.shader" />
+    <None Include="Assets\Polytope Studio\Lowpoly Medieval Environments\Sources\Shaders\PT_Vegetation_Opaque_Shader.shader" />
+    <None Include="Assets\Polytope Studio\Lowpoly Medieval Environments\Sources\Shaders\PT_Vegetation_Foliage_Shader.shader" />
+    <None Include="Assets\Polytope Studio\Lowpoly Medieval Environments\Sources\Shaders\PT_Water_Shader.shader" />
+    <None Include="Assets\Polytope Studio\Lowpoly Medieval Environments\Sources\Shaders\PT_Vegetation_Flowers_Shader.shader" />
+    <None Include="Assets\Polytope Studio\Lowpoly Medieval Environments\Sources\Shaders\PT_Rock_Shader_VS.shader" />
     <None Include="Assets\Resources\Art\UnityChan\Audio\Voice\unity-chan_voice_list.txt" />
     <None Include="Assets\Resources\Art\UnityChan\Art\UnityChanShader\Shader\Unitychan_chara_hada_blend.shader" />
+    <None Include="Assets\Polytope Studio\Lowpoly Medieval Environments\Sources\Shaders\PT_Vegetation_Plants_Shader_VS.shader" />
     <None Include="Assets\Resources\Art\UnityChan\Art\UnityChanShader\Shader\Unitychan_chara_eye.shader" />
+    <None Include="Assets\Polytope Studio\Lowpoly Medieval Environments\Sources\Shaders\PT_Vegetation_Flowers_Shader_VS.shader" />
     <None Include="Assets\Resources\Art\UnityChan\Art\Stage\Shader\AlphaMask.shader" />
+    <None Include="Assets\Polytope Studio\Lowpoly Medieval Environments\Sources\Shaders\PT_Rock_Shader.shader" />
+    <None Include="Assets\Polytope Studio\Lowpoly Medieval Environments\Sources\Shaders\VS_indirect.cginc" />
     <None Include="Assets\Resources\Art\UnityChan\Art\UnityChanShader\Shader\Unitychan_chara_hair.shader" />
+    <None Include="Assets\Polytope Studio\Lowpoly Medieval Environments\Sources\Shaders\PT_Vegetation_Foliage_Shader_VS.shader" />
     <None Include="Assets\Resources\Art\UnityChan\Art\UnityChanShader\Shader\Unitychan_chara_eye_blend.shader" />
   </ItemGroup>
   <ItemGroup>

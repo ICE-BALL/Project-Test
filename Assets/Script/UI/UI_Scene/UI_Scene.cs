@@ -8,4 +8,9 @@ public class UI_Scene : UI_Base
     {
         Managers.UI.SetCanvas(gameObject, false);
     }
+
+    public virtual void Bag_Init()
+    {
+        Managers.UI.SetCanvas(gameObject, false, 1000);
+    }
 }

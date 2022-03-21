@@ -14,12 +14,12 @@ public class Bag : UI_Scene
 
     void Start()
     {
-        Init();
+        Bag_Init();
     }
 
-    public override void Init()
+    public override void Bag_Init()
     {
-        base.Init();
+        base.Bag_Init();
 
         Bind<Image>(typeof(Images));
 
@@ -32,8 +32,9 @@ public class Bag : UI_Scene
         if (Define.Bag == false)
         {
             Define.Bag = true;
-            Managers.UI.ShowPopupUI<Ice_Canvas>();
-            Managers.UI.ShowPopupUI<Iron_Canvas>();
+            Managers.UI.ShowPopupUI<UI_Inven>();
+            //Managers.UI.ShowPopupUI<Ice_Canvas>();
+            //Managers.UI.ShowPopupUI<Iron_Canvas>();
         }
         else
         {

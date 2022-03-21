@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UIManager
 {
@@ -22,7 +23,7 @@ public class UIManager
         }
     }
 
-    public void SetCanvas(GameObject go, bool sort)
+    public void SetCanvas(GameObject go, bool sort, int order = 0)
     {
         Canvas canvas = Util.GetOrAddComponent<Canvas>(go);
         canvas.renderMode = RenderMode.ScreenSpaceOverlay;
@@ -35,7 +36,7 @@ public class UIManager
         }
         else
         {
-            canvas.sortingOrder = 0;
+            canvas.sortingOrder = order;
         }
     }
 
@@ -65,6 +66,20 @@ public class UIManager
         go.transform.SetParent(Root.transform);
 
         return popup;
+    }
+
+    public T MakeSubItem<T>(Transform parent = null, string name = null/*Sprite image = null*/) where T : UI_Base
+    {
+        if (string.IsNullOrEmpty(name))
+            name = typeof(T).Name;
+
+        GameObject go = Managers.Resource.Instantiate($"UI/Inven/Item/{name}");
+        //if (image != null)
+        //    go.GetComponent<Image>().sprite = image;
+        if (parent != null)
+            go.transform.SetParent(parent);
+
+        return Util.GetOrAddComponent<T>(go);
     }
 
     public void ClosePopupUI(UI_Popup popup)
