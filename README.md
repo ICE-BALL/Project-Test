@@ -32,6 +32,13 @@ Iron / Ice
 ![0 01v Change weapon](https://user-images.githubusercontent.com/92620792/159122831-87065f34-df13-419a-b000-534329165985.gif)
 
 
+0.011v Created Weapon window
+
+![0 011v Weapon Window](https://user-images.githubusercontent.com/92620792/159270374-d9106e09-e25e-43ee-b4aa-7b46d2213439.gif)
+
+
+
+
 0.011v Inventory System
 
 ![0 011v Inventory System](https://user-images.githubusercontent.com/92620792/159269430-301e2cd9-317f-4dc6-94cc-8bf62484a61a.gif)
